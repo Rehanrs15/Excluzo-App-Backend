@@ -373,8 +373,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`userid`, `username`, `email`, `password`, `mobile`, `gender`, `age`, `address`) VALUES
-('REHAN12312', 'REHAN123', 'rehanshikkalgar@gmail.com', 'REHAN123@', 0, 1, 21, ''),
-('rehan783', 'rehan', 'rehanshikkalgar7865@gmail', 'REHAN123@', 2147483647, 1, 21, ''),
+('REHAN12312', '121221', 'rehanshikkalgar@gmail.com', 'REHAN123@', 0, 1, 21, ''),
+('rehan783', 'rehan', 'rehanshikkalgar7865@gmail', '12121212@', 2147483647, 1, 21, ''),
 ('Syedtemp94', 'Syedtemp', 'tempthings@gmail.com', '123456', 2147483647, 1, 22, '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
