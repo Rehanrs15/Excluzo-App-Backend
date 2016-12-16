@@ -1,7 +1,7 @@
 <?php
 
 
-
+//
 	function loadItems($smartbasketitem){
 
 		include "init.php";
