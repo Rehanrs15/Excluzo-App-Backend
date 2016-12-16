@@ -70,8 +70,8 @@
     $inputJSON = file_get_contents('php://input');
     $input= json_decode( $inputJSON, TRUE );
 
-	$latFrom = $input['lat'];
-	$longFrom = $input['long'];
+	$latFrom = floatval($input['lat']);
+	$longFrom = floatval($input['long']);
 
 	//array of items
 	$items = [];
@@ -82,15 +82,15 @@
 		while ($row = mysqli_fetch_assoc($result)) {
 			$latlong = $row['location'];
 			$splitlatlong = explode(",", $latlong);
-			$latTo = $splitlatlong[0];
-			$longTo = $splitlatlong[1];
+			$latTo = floatval($splitlatlong[0]);
+			$longTo = floatval($splitlatlong[1]);
 			$distance = getDistanceBetweenTwoPoints($latFrom,$latTo, $longFrom,$longTo);
 
 			//echo $distance ."<br>";
 
 
 			//if user is with the range the show the items buyed in the range.
-			if ($distance > 0.5 and $distance < 1.5) {
+			if ($distance >= 0.0 and $distance < 1.5) {
 				$itemstring = $row['items'];
 				$itemarray = explode(",", $itemstring);
 
@@ -118,4 +118,5 @@
 		loadProducts($items);
 	}
 
+	mysqli_close($connection);
 ?>

@@ -19,4 +19,6 @@
 	for($i = 0; $i < sizeof($locationArray); $i++){
             echo($locationArray[$i]);
         }
+    
+	mysqli_close($connection);
 ?>

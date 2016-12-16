@@ -48,4 +48,5 @@
 			echo json_encode($fail);
 	}	
 	
+	mysqli_close($connection);
 ?>								

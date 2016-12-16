@@ -120,5 +120,6 @@
 		//get the productobject from DATABASE
 		loadItems($smartbasketitem);
 	}
-
+	
+	mysqli_close($connection);
 ?>

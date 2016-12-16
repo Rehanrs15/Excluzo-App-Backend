@@ -17,5 +17,7 @@
 		$response = array("status" => "failed");
 	}
 	echo json_encode($response);
+	
+	mysqli_close($connection);
 
 ?>

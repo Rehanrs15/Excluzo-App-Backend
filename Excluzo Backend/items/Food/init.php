@@ -1,8 +1,8 @@
 <?php
-	$username = "u540736305_user1";
+	$username = "u859746321_rehan";
 	$host = "mysql.hostinger.in";
 	$password = "REHAN123@";
-	$databaseName = "u540736305_exclz";
+	$databaseName = "u859746321_exc";
 	
 	$connection = mysqli_connect($host,$username,$password,$databaseName);
 	if(!$connection){
