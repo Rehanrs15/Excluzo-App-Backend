@@ -9,6 +9,6 @@
 		//echo "Connection Error".mysqli_connect_error;
 	}
 	else{
-		//echo "Connection Successfull";
+		//echo "Connection Successfull";//
 	}
 ?>
